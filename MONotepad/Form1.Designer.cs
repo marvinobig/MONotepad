@@ -38,14 +38,14 @@
             undoToolStripMenuItem = new ToolStripMenuItem();
             copyToolStripMenuItem = new ToolStripMenuItem();
             toolStripMenuItem1 = new ToolStripMenuItem();
-            formatToolStripMenuItem = new ToolStripMenuItem();
-            aboutToolStripMenuItem = new ToolStripMenuItem();
-            statusStrip1 = new StatusStrip();
-            TextBox = new RichTextBox();
-            aboutToolStripMenuItem1 = new ToolStripMenuItem();
             deleteToolStripMenuItem = new ToolStripMenuItem();
+            formatToolStripMenuItem = new ToolStripMenuItem();
             wordWrapToolStripMenuItem = new ToolStripMenuItem();
             fontToolStripMenuItem = new ToolStripMenuItem();
+            aboutToolStripMenuItem = new ToolStripMenuItem();
+            aboutToolStripMenuItem1 = new ToolStripMenuItem();
+            statusStrip1 = new StatusStrip();
+            TextBox = new RichTextBox();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -68,25 +68,28 @@
             // newToolStripMenuItem
             // 
             newToolStripMenuItem.Name = "newToolStripMenuItem";
-            newToolStripMenuItem.Size = new Size(114, 22);
+            newToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.N;
+            newToolStripMenuItem.Size = new Size(186, 22);
             newToolStripMenuItem.Text = "New";
             // 
             // openToolStripMenuItem
             // 
             openToolStripMenuItem.Name = "openToolStripMenuItem";
-            openToolStripMenuItem.Size = new Size(114, 22);
+            openToolStripMenuItem.Size = new Size(186, 22);
             openToolStripMenuItem.Text = "Open";
             // 
             // saveToolStripMenuItem
             // 
             saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            saveToolStripMenuItem.Size = new Size(114, 22);
+            saveToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.S;
+            saveToolStripMenuItem.Size = new Size(186, 22);
             saveToolStripMenuItem.Text = "Save";
             // 
             // saveAsToolStripMenuItem
             // 
             saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            saveAsToolStripMenuItem.Size = new Size(114, 22);
+            saveAsToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Shift | Keys.S;
+            saveAsToolStripMenuItem.Size = new Size(186, 22);
             saveAsToolStripMenuItem.Text = "Save As";
             // 
             // editToolStripMenuItem
@@ -99,20 +102,30 @@
             // undoToolStripMenuItem
             // 
             undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            undoToolStripMenuItem.Size = new Size(103, 22);
+            undoToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Z;
+            undoToolStripMenuItem.Size = new Size(180, 22);
             undoToolStripMenuItem.Text = "Undo";
             // 
             // copyToolStripMenuItem
             // 
             copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            copyToolStripMenuItem.Size = new Size(103, 22);
+            copyToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.C;
+            copyToolStripMenuItem.Size = new Size(180, 22);
             copyToolStripMenuItem.Text = "Copy";
             // 
             // toolStripMenuItem1
             // 
             toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.ShortcutKeys = Keys.Control | Keys.V;
             toolStripMenuItem1.Size = new Size(180, 22);
             toolStripMenuItem1.Text = "Paste";
+            // 
+            // deleteToolStripMenuItem
+            // 
+            deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            deleteToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.D;
+            deleteToolStripMenuItem.Size = new Size(180, 22);
+            deleteToolStripMenuItem.Text = "Delete";
             // 
             // formatToolStripMenuItem
             // 
@@ -121,12 +134,30 @@
             formatToolStripMenuItem.Size = new Size(57, 20);
             formatToolStripMenuItem.Text = "Format";
             // 
+            // wordWrapToolStripMenuItem
+            // 
+            wordWrapToolStripMenuItem.Name = "wordWrapToolStripMenuItem";
+            wordWrapToolStripMenuItem.Size = new Size(134, 22);
+            wordWrapToolStripMenuItem.Text = "Word Wrap";
+            // 
+            // fontToolStripMenuItem
+            // 
+            fontToolStripMenuItem.Name = "fontToolStripMenuItem";
+            fontToolStripMenuItem.Size = new Size(134, 22);
+            fontToolStripMenuItem.Text = "Font";
+            // 
             // aboutToolStripMenuItem
             // 
             aboutToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aboutToolStripMenuItem1 });
             aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             aboutToolStripMenuItem.Size = new Size(44, 20);
             aboutToolStripMenuItem.Text = "Help";
+            // 
+            // aboutToolStripMenuItem1
+            // 
+            aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
+            aboutToolStripMenuItem1.Size = new Size(107, 22);
+            aboutToolStripMenuItem1.Text = "About";
             // 
             // statusStrip1
             // 
@@ -146,30 +177,6 @@
             TextBox.Size = new Size(384, 315);
             TextBox.TabIndex = 2;
             TextBox.Text = "";
-            // 
-            // aboutToolStripMenuItem1
-            // 
-            aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            aboutToolStripMenuItem1.Size = new Size(180, 22);
-            aboutToolStripMenuItem1.Text = "About";
-            // 
-            // deleteToolStripMenuItem
-            // 
-            deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            deleteToolStripMenuItem.Size = new Size(180, 22);
-            deleteToolStripMenuItem.Text = "Delete";
-            // 
-            // wordWrapToolStripMenuItem
-            // 
-            wordWrapToolStripMenuItem.Name = "wordWrapToolStripMenuItem";
-            wordWrapToolStripMenuItem.Size = new Size(180, 22);
-            wordWrapToolStripMenuItem.Text = "Word Wrap";
-            // 
-            // fontToolStripMenuItem
-            // 
-            fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-            fontToolStripMenuItem.Size = new Size(180, 22);
-            fontToolStripMenuItem.Text = "Font";
             // 
             // fmMain
             // 
