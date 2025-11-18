@@ -1,6 +1,6 @@
 ﻿namespace MONotepad
 {
-    partial class Form1
+    partial class fmMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -59,7 +59,7 @@
             TextBox.TabIndex = 2;
             TextBox.Text = "";
             // 
-            // Form1
+            // fmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -68,7 +68,7 @@
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            Name = "Form1";
+            Name = "fmMain";
             Text = "MONotepad";
             ResumeLayout(false);
             PerformLayout();
