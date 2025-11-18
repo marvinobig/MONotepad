@@ -30,7 +30,7 @@
         {
             menuStrip1 = new MenuStrip();
             statusStrip1 = new StatusStrip();
-            richTextBox1 = new RichTextBox();
+            TextBox = new RichTextBox();
             SuspendLayout();
             // 
             // menuStrip1
@@ -49,22 +49,22 @@
             statusStrip1.TabIndex = 1;
             statusStrip1.Text = "statusStrip1";
             // 
-            // richTextBox1
+            // TextBox
             // 
-            richTextBox1.BorderStyle = BorderStyle.None;
-            richTextBox1.Dock = DockStyle.Fill;
-            richTextBox1.Location = new Point(0, 24);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(384, 315);
-            richTextBox1.TabIndex = 2;
-            richTextBox1.Text = "";
+            TextBox.BorderStyle = BorderStyle.None;
+            TextBox.Dock = DockStyle.Fill;
+            TextBox.Location = new Point(0, 24);
+            TextBox.Name = "TextBox";
+            TextBox.Size = new Size(384, 315);
+            TextBox.TabIndex = 2;
+            TextBox.Text = "";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(384, 361);
-            Controls.Add(richTextBox1);
+            Controls.Add(TextBox);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
@@ -78,6 +78,6 @@
 
         private MenuStrip menuStrip1;
         private StatusStrip statusStrip1;
-        private RichTextBox richTextBox1;
+        private RichTextBox TextBox;
     }
 }
