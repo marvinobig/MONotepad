@@ -16,5 +16,10 @@ namespace MONotepad
         {
             TextBox.Copy();
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            TextBox.Paste();
+        }
     }
 }

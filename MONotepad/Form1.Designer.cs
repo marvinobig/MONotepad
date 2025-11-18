@@ -121,6 +121,7 @@
             toolStripMenuItem1.ShortcutKeys = Keys.Control | Keys.V;
             toolStripMenuItem1.Size = new Size(180, 22);
             toolStripMenuItem1.Text = "Paste";
+            toolStripMenuItem1.Click += toolStripMenuItem1_Click;
             // 
             // deleteToolStripMenuItem
             // 
