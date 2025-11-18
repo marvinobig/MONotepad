@@ -21,5 +21,15 @@ namespace MONotepad
         {
             TextBox.Paste();
         }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TextBox.Cut();
+        }
     }
 }

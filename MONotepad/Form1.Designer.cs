@@ -46,6 +46,7 @@
             aboutToolStripMenuItem1 = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
             TextBox = new RichTextBox();
+            cutToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -94,7 +95,7 @@
             // 
             // editToolStripMenuItem
             // 
-            editToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { undoToolStripMenuItem, copyToolStripMenuItem, toolStripMenuItem1, deleteToolStripMenuItem });
+            editToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { undoToolStripMenuItem, cutToolStripMenuItem, copyToolStripMenuItem, toolStripMenuItem1, deleteToolStripMenuItem });
             editToolStripMenuItem.Name = "editToolStripMenuItem";
             editToolStripMenuItem.Size = new Size(39, 20);
             editToolStripMenuItem.Text = "Edit";
@@ -129,6 +130,7 @@
             deleteToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.D;
             deleteToolStripMenuItem.Size = new Size(180, 22);
             deleteToolStripMenuItem.Text = "Delete";
+            deleteToolStripMenuItem.Click += deleteToolStripMenuItem_Click;
             // 
             // formatToolStripMenuItem
             // 
@@ -181,6 +183,13 @@
             TextBox.TabIndex = 2;
             TextBox.Text = "";
             // 
+            // cutToolStripMenuItem
+            // 
+            cutToolStripMenuItem.Name = "cutToolStripMenuItem";
+            cutToolStripMenuItem.Size = new Size(180, 22);
+            cutToolStripMenuItem.Text = "Cut";
+            cutToolStripMenuItem.Click += cutToolStripMenuItem_Click;
+            // 
             // fmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -218,5 +227,6 @@
         private ToolStripMenuItem deleteToolStripMenuItem;
         private ToolStripMenuItem wordWrapToolStripMenuItem;
         private ToolStripMenuItem fontToolStripMenuItem;
+        private ToolStripMenuItem cutToolStripMenuItem;
     }
 }
