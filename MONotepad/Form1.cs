@@ -11,5 +11,10 @@ namespace MONotepad
         {
             TextBox.Undo();
         }
+
+        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TextBox.Copy();
+        }
     }
 }
