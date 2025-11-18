@@ -24,7 +24,7 @@ namespace MONotepad
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            TextBox.Clear();
         }
 
         private void cutToolStripMenuItem_Click(object sender, EventArgs e)
