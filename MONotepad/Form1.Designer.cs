@@ -51,9 +51,11 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(0, 27);
+            richTextBox1.BorderStyle = BorderStyle.None;
+            richTextBox1.Dock = DockStyle.Fill;
+            richTextBox1.Location = new Point(0, 24);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(384, 309);
+            richTextBox1.Size = new Size(384, 315);
             richTextBox1.TabIndex = 2;
             richTextBox1.Text = "";
             // 
