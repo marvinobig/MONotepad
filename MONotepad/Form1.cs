@@ -31,5 +31,21 @@ namespace MONotepad
         {
             TextBox.Cut();
         }
+
+        private bool CheckChange()
+        {
+            return true;
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (CheckChange())
+            {
+                if (openFileDialog1.ShowDialog() == DialogResult.OK) 
+                { 
+                    TextBox.LoadFile(openFileDialog1.FileName);
+                }
+            }   
+        }
     }
 }

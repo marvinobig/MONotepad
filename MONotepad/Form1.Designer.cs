@@ -34,6 +34,7 @@
             openToolStripMenuItem = new ToolStripMenuItem();
             saveToolStripMenuItem = new ToolStripMenuItem();
             saveAsToolStripMenuItem = new ToolStripMenuItem();
+            exitToolStripMenuItem = new ToolStripMenuItem();
             editToolStripMenuItem = new ToolStripMenuItem();
             undoToolStripMenuItem = new ToolStripMenuItem();
             cutToolStripMenuItem = new ToolStripMenuItem();
@@ -47,7 +48,7 @@
             aboutToolStripMenuItem1 = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
             TextBox = new RichTextBox();
-            exitToolStripMenuItem = new ToolStripMenuItem();
+            openFileDialog1 = new OpenFileDialog();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -79,6 +80,7 @@
             openToolStripMenuItem.Name = "openToolStripMenuItem";
             openToolStripMenuItem.Size = new Size(186, 22);
             openToolStripMenuItem.Text = "Open";
+            openToolStripMenuItem.Click += openToolStripMenuItem_Click;
             // 
             // saveToolStripMenuItem
             // 
@@ -93,6 +95,12 @@
             saveAsToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Shift | Keys.S;
             saveAsToolStripMenuItem.Size = new Size(186, 22);
             saveAsToolStripMenuItem.Text = "Save As";
+            // 
+            // exitToolStripMenuItem
+            // 
+            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            exitToolStripMenuItem.Size = new Size(186, 22);
+            exitToolStripMenuItem.Text = "Exit";
             // 
             // editToolStripMenuItem
             // 
@@ -192,11 +200,9 @@
             TextBox.TabIndex = 2;
             TextBox.Text = "";
             // 
-            // exitToolStripMenuItem
+            // openFileDialog1
             // 
-            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(186, 22);
-            exitToolStripMenuItem.Text = "Exit";
+            openFileDialog1.FileName = "openFileDialog1";
             // 
             // fmMain
             // 
@@ -237,5 +243,6 @@
         private ToolStripMenuItem fontToolStripMenuItem;
         private ToolStripMenuItem cutToolStripMenuItem;
         private ToolStripMenuItem exitToolStripMenuItem;
+        private OpenFileDialog openFileDialog1;
     }
 }
