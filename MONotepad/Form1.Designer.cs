@@ -49,6 +49,7 @@
             statusStrip1 = new StatusStrip();
             TextBox = new RichTextBox();
             openFileDialog1 = new OpenFileDialog();
+            saveFileDialog1 = new SaveFileDialog();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -88,6 +89,7 @@
             saveToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.S;
             saveToolStripMenuItem.Size = new Size(186, 22);
             saveToolStripMenuItem.Text = "Save";
+            saveToolStripMenuItem.Click += saveToolStripMenuItem_Click;
             // 
             // saveAsToolStripMenuItem
             // 
@@ -244,5 +246,6 @@
         private ToolStripMenuItem cutToolStripMenuItem;
         private ToolStripMenuItem exitToolStripMenuItem;
         private OpenFileDialog openFileDialog1;
+        private SaveFileDialog saveFileDialog1;
     }
 }

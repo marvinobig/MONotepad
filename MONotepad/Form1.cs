@@ -2,9 +2,24 @@ namespace MONotepad
 {
     public partial class fmMain : Form
     {
+        private string TextFileName;
         public fmMain()
         {
             InitializeComponent();
+        }
+
+        private void SaveFile(string FileName)
+        {
+            TextFileName = FileName;
+            TextBox.SaveFile(FileName);
+        }
+
+        private void SaveFileAs()
+        {
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                SaveFile(saveFileDialog1.FileName);
+            }
         }
 
         private void undoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -41,11 +56,23 @@ namespace MONotepad
         {
             if (CheckChange())
             {
-                if (openFileDialog1.ShowDialog() == DialogResult.OK) 
-                { 
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                {
                     TextBox.LoadFile(openFileDialog1.FileName);
                 }
-            }   
+            }
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(TextFileName)) 
+            {
+                SaveFileAs();
+            } 
+            else
+            {
+                SaveFile(TextFileName);
+            }
         }
     }
 }
