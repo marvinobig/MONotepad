@@ -65,13 +65,34 @@ namespace MONotepad
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(TextFileName)) 
+            if (string.IsNullOrEmpty(TextFileName))
             {
                 SaveFileAs();
-            } 
+            }
             else
             {
                 SaveFile(TextFileName);
+            }
+        }
+
+        private void findToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            findForm find = new findForm();
+            find.Show(this);
+        }
+
+        public void Find(string text, bool downChecked, bool matchChecked) 
+        {
+            if (downChecked)
+            {
+                if (matchChecked)
+                {
+                    TextBox.Find(text, TextBox.SelectionStart + 1, RichTextBoxFinds.MatchCase);
+                }
+                else
+                {
+                    TextBox.Find(text, TextBox.SelectionStart + 1, RichTextBoxFinds.None);
+                }
             }
         }
     }
